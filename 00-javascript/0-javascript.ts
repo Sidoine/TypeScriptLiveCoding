@@ -1,31 +1,34 @@
 /**
- * @param a {number} A number
+ * @param a A number
  */
-function test(a){
+function test(a:number){
     return a * a;
 }
 
 var b = test(4);
 
 /**
- * @param a {any[]} An array
+ * @param a An array
  */
-function count(a){
+function count(a:any[]){
     return a.length;
 }
 
 var c = count([18, 15]);
 
+class SampleClass {
+    test: string;
 
-/**
- * @param test {string} A string
- */
-function SampleClass(test) {
-    this.test = test;
-}
+    /**
+     * @param test A string
+     */
+    constructor(test: string) {
+        this.test = test;
+    }
 
-SampleClass.prototype.bla = function(){
-    return this.test;
+    bla() {
+        return this.test;
+    }
 }
 
 var d = new SampleClass("toto");
