@@ -6,7 +6,6 @@ function test(a){
 }
 
 var b = test(4);
-print(b);
 
 /**
  * @param a {any[]} An array
